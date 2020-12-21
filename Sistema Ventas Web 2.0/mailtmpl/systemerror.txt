@@ -1,0 +1,10 @@
+Estimado Programador:</br>
+
+En el <b>[SYSTEM]</b> ocurrio una excepcion en el metodo <b>[METODO]</b>.<br/>
+Mensaje de Excepcion: <b>[MESSAGE]</b><br>
+
+<b>DETALLE DE VIAJE</b><br/>
+<b>Ruta : </b>[RUTA]
+<b>Servicio : </b>[SERVICIO]
+<b>Fecha y Hora Viaje : </b>[FECHA-HORA-VIAJE]
+<b>Usuario : </b>[USERNAME]

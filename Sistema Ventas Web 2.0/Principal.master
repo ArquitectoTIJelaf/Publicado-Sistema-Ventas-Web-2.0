@@ -1,0 +1,193 @@
+<%@ Master Language="VB" CodeFile="Principal.master.vb" Inherits="Principal" %>
+
+<%@ Import Namespace="PUtilitario" %>
+
+<%@ Register Src="WUCPrgss.ascx" TagName="WUCPrgss" TagPrefix="uc2" %>
+<!doctype html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <title><%= AppSettings.valueString("RazonSocial")%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="Jelaf integradores SRL" />
+    <meta name="description" content="<%= AppSettings.valueString("RazonSocial")%>" />
+    <meta name="keywords" content="Pasajes a diversas ciudades del peru" />
+    <meta name="DC.title" content="<%= AppSettings.valueString("RazonSocial")%>" />
+    <meta name="DC.description" lang="es" content="<%= AppSettings.valueString("RazonSocial")%>" />
+    <meta name="geo.region" content="PE-LIM" />
+    <meta property="og:title" content="<%= AppSettings.valueString("RazonSocial")%>" />
+    <meta property="og:type" content="company" />
+    <meta property="og:description" content="<%= AppSettings.valueString("RazonSocial")%>" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/Extension.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1-11-1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Utiles.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True"
+        EnablePageMethods="True" ScriptMode="Release">
+    </asp:ScriptManager>
+    <uc2:WUCPrgss ID="WUCPrgss1" runat="server" />
+    <%--<div id="container">
+
+       
+        <div id="body">--%>
+    <asp:ContentPlaceHolder ID="ContPWeb" runat="server">
+    </asp:ContentPlaceHolder>
+    <%-- </div> 
+    </div>--%>
+    </form>
+
+    <%If (AppSettings.valueString("PasarelaMultiTarjeta") = "1") Then%>
+
+     <footer>
+    <div id="contFoter">
+        <div class="container">
+        <div class="contFoter-tablet">
+            <div class="col-md-6 col-sm-6">
+                <p class="f-dev">Desarrollado por: <a href="http://www.jelaf.pe/" target="_blank">Jelaf integradores SRL</a></p><br>
+                <ul id="menu-foter">
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li class="separador-item-footer"></li>
+                    <li><a href="#">Libro de reclamaciones</a></li>
+                     <li class="separador-item-footer"></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+                      <div class="col-md-6 col-sm-6">
+
+                <div class="col-md-9 col-sm-9 logo-visa">
+                    Formas de Pago:<br>
+                   <img src="images/visa_pos_fc.png" alt="Pague con VISA" width="20%" />
+                   <img src="images/mastercard.jpg" alt="Pague con MASTERCARD" width="20%" />
+				   <img src="images/dinners.png" alt="Pague con DINNERS CLUB" width="35%" />
+				   <img src="images/american.jpg" alt="Pague con AMERICAN EXPRESS" width="15%" />
+                </div>
+                <div class="col-md-3 col-sm-3 certificado-ssl">
+                    Certificado:  <br>
+                    <!-- Begin DigiCert site seal HTML -->                   
+                </div>   
+                <!-- Begin DigiCert site seal HTML and JavaScript -->
+               
+                <!-- End DigiCert site seal HTML and JavaScript -->
+                
+                
+            </div>        
+        </div>
+        <div class="contFoter-mobile">
+  
+                    <div class="forma-pago">
+                                 Formas de Pago:<br>
+                                           <img src="images/visa_pos_fc.png" alt="Pague con VISA" width="20%" />
+                   <img src="images/mastercard.jpg" alt="Pague con MASTERCARD" width="20%" />
+				   <img src="images/dinners.png" alt="Pague con DINNERS CLUB" width="35%" />
+				   <img src="images/american.jpg" alt="Pague con AMERICAN EXPRESS" width="15%" />
+                                <br />
+                                Certificado:  <br>
+                                <!-- Begin DigiCert site seal HTML -->                    
+                    </div>
+                    <p class="f-dev">Desarrollado por: <a href="http://www.jelaf.pe/" target="_blank">Jelaf integradores SRL</a></p>
+                    <ul class="terminos-mobile">
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Libro de reclamaciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+        </div>
+        
+
+
+            
+
+        </div>
+    </div>
+</footer>
+
+   <% Else %>
+    <footer>
+    <div id="contFoter">
+        <div class="container">
+        <div class="contFoter-tablet">
+            <div class="col-md-6 col-sm-6">
+                <p class="f-dev">Desarrollado por: <a href="http://www.jelaf.pe/" target="_blank">Jelaf integradores SRL</a></p><br>
+                <ul id="menu-foter">
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li class="separador-item-footer"></li>
+                    <li><a href="#">Libro de reclamaciones</a></li>
+                     <li class="separador-item-footer"></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1 col-sm-1">
+
+            </div>
+            <div class="col-md-5 col-sm-5">
+               <div class="col-md-4 col-sm-4">
+               </div>
+                <div class="col-md-4 col-sm-4 logo-visa">
+                    Formas de Pago:<br>
+                    <img src="images/visa_pos_fc.png" alt="Pague con VISA" width="90px" />
+                </div>
+                <div class="col-md-4 col-sm-4 certificado-ssl">
+                    Certificado:  <br>
+                    <!-- Begin DigiCert site seal HTML -->                   
+                </div> 
+                
+                 <!--div class="col-md-1 imgsprite img-mastercard"></div>
+                <div class="col-md-1 imgsprite img-americanexpress"></div>
+                <div class="col-md-1 imgsprite img-diners"></div-->
+                
+                <!-- Begin DigiCert site seal HTML and JavaScript -->
+               
+                <!-- End DigiCert site seal HTML and JavaScript -->
+                
+                
+            </div>        
+        </div>
+        <div class="contFoter-mobile">
+  
+                    <div class="forma-pago">
+                                 Formas de Pago:<br>
+                                <img src="images/visa_pos_fc.png" alt="Pague con VISA" width="40%" />
+                                <br />
+                                Certificado:  <br>
+                                <!-- Begin DigiCert site seal HTML -->                    
+                    </div>
+                    <p class="f-dev">Desarrollado por: <a href="http://www.jelaf.pe/" target="_blank">Jelaf integradores SRL</a></p>
+                    <ul class="terminos-mobile">
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Libro de reclamaciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+        </div>
+        
+
+
+            
+
+        </div>
+    </div>
+
+</footer>
+    <%End If %>
+
+</body>
+</html>

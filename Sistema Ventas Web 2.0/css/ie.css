@@ -1,0 +1,13 @@
+﻿.blockcontencenter table tr td
+{
+	vertical-align:middle;
+}
+
+.item-price-disabled
+{
+	color:#fff;
+	margin-top:2px;
+	padding-top:0px !important;
+
+
+}

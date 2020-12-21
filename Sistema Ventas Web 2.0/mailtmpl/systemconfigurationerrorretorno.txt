@@ -1,0 +1,18 @@
+﻿Estimado Administrador:</br>
+
+Sucedio el siguiente error de configuracion en el Sistema Venta de Pasajes por Internet<br/>
+
+	Mensaje de Error de Configuracion: 
+	<b>[MESSAGE]</b><br/>
+<b>DETALLE DE VIAJE</b><br/>
+<b><u>Viaje de Ida</u></b>
+<b>Ruta : </b>[RUTA]
+<b>Servicio : </b>[SERVICIO]
+<b>Fecha y Hora Viaje : </b>[FECHA-HORA-VIAJE]
+<b>Usuario : </b>[USERNAME]
+
+<b><u>Viaje de Retorno</u></b>
+<b>Ruta : </b>[RUTA-RETORNO]
+<b>Servicio : </b>[SERVICIO-RETORNO]
+<b>Fecha y Hora Viaje : </b>[FECHA-HORA-VIAJE-RETORNO]
+<b>Usuario : </b>[USERNAME]<br/>

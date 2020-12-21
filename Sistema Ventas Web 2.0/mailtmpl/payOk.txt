@@ -1,0 +1,142 @@
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" align="center" style="width:640px;border-spacing: 0;font-family: 'Arial', sans-serif;font-size:13px;">
+    <tbody>
+      <tr style="border-spacing: 0;">
+        <td style="border-spacing: 0;text-align:center;padding:30px 0px;;background:#008227"> 
+           <img alt="Carhuamayo S.R.L."  style="max-width:100%;height:auto;display:block;margin: auto;" src="https://sales.transportescarhuamayo.com.pe/images/logo.png"  />
+        </td>
+      </tr>
+      <tr style="border-spacing: 0;">
+        <td style="border-spacing: 0; border-left:1px solid #124aa1;background:#008227;border-right:1px solid #124aa1;color:#fff;padding-top:5px;padding-bottom:5px;text-align:center;font-weight:bold;font-style: italic;font-size:15px;"> 
+            Nro Pedido: [NRO_ORDEN]
+        </td>
+      </tr>
+
+	[HD_IDA]
+      <tr style="border-spacing: 0;">
+        <td style="border-spacing: 0; border-left:1px solid #fff;border-right:1px solid #fff; background:#fff;padding:10px 0px;"> 
+             
+        </td>
+      </tr>
+	[HD_RETORNO]
+      <tr style="border-spacing: 0;">
+        <td style="border-spacing: 0; border-left:1px solid #fff;border-right:1px solid #fff; background:#fff;padding:10px 0px;"> 
+             
+        </td>
+      </tr>
+      <tr>
+        <td style="background:#fff;padding:10px;padding-bottom:0px;text-align:center;font-size:13px;color:#008227;font-weight:bold;font-style: italic;"> 
+        <p >
+          IMPORTANTE
+        </p>
+        </td>
+      </tr>
+       <tr style="border-spacing: 0;">
+        <td style="background:#fff;padding:10px;padding-bottom:10px;text-align:center;font-size:12px;color:#000;"> 
+        <p>        
+		 * Le recordamos que debe estar presente las personas quienes viajen 30 minutos antes de la hora de vije portando su documento de identificaci&oacuten en la terminal que
+		  selecion&oacute como origen
+		</p>
+        </td>
+      </tr>
+     
+        
+    </tbody>
+  </table>
+   
+  
+</body>
+<style type="text/css">
+
+
+#outlook a { 
+  padding:0; 
+} 
+
+body{ 
+  width:100% !important; 
+  min-width: 100%;
+  -webkit-text-size-adjust:100%; 
+  -ms-text-size-adjust:100%; 
+  margin:0; 
+  padding:0;
+}
+
+.ExternalClass { 
+  width:100%;
+} 
+
+.ExternalClass, 
+.ExternalClass p, 
+.ExternalClass span, 
+.ExternalClass font, 
+.ExternalClass td, 
+.ExternalClass div { 
+  line-height: 100%; 
+} 
+
+#backgroundTable { 
+  margin:0; 
+  padding:0; 
+  width:100% !important; 
+  line-height: 100% !important; 
+}
+
+img { 
+  outline:none; 
+  text-decoration:none; 
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  height: auto;
+  max-width: 100%; 
+  float: left; 
+  clear: both; 
+  display: block !important;
+}
+
+center {
+  width: 100%;
+  min-width: 580px;
+}
+
+a img { 
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse;
+}
+
+td { 
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important; 
+  font-family: 'Arial', sans-serif;font-size:13px;
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+
+}
+th{
+  font-weight: bold;
+  
+}
+hr {
+  color: #d9d9d9; 
+  background-color: #d9d9d9; 
+  height: 1px; 
+  border: none;
+}
+</style>
+
+   

@@ -1,0 +1,5 @@
+Estimado: <b>[NAME_USER]</b>
+Cantidad de asientos ordenado es:<b> [CTASIENTOS]</b>
+El c&oacute;digo de su orden es: <b>[NUMORDER]</b>
+<p>por favor, esta informaci&oacute;n es valido &uacute;nicamente para el  control interno de nuestro sistema, para cualquier  consulta o reclamo de sus compras tiene que hacer uso de  este dato  incluyendo su informaci&oacute;n personal.</p>
+<p>Le recordamos que este correo no es confirmaci&oacute;n de compra,   solo una confirmaci&oacute;n de generaci&oacute;n de orden de su   proceso de compra, en su pantalla. </p>

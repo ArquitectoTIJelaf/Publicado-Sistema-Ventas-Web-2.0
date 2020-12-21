@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<nuevo_eticket>
+	<parametros>
+		<parametro id="CANAL">3</parametro>
+		<parametro id="PRODUCTO">1</parametro>
+		<parametro id="CODTIENDA">[CODTIENDA]</parametro>
+		<parametro id="NUMORDEN">[NUMORDEN]</parametro>
+		<parametro id="MOUNT">[MOUNT]</parametro>
+		<parametro id="DATO_COMERCIO">DATOS XXXX</parametro>
+	</parametros>
+</nuevo_eticket>

@@ -1,0 +1,7 @@
+﻿Estimado Administrador:<br/><br/>
+El N° Pedido [NRO_PEDIDO] tuvo problemas en el registro de la venta. <br/>
+No se grabo la venta de [CANTIDAD] boletos. <br/>
+La transaccion se realizo el dia [FECHATRANSACCION].<br/>
+Comunicarse con el cliente a su cuenta de correo [EMAIL].<br/>
+Extornar el monto que se haya cobrado al cliente en la pasarela de pago<br/><br/>
+Sistema de Ventas Web

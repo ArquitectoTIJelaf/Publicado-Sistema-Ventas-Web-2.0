@@ -1,0 +1,7 @@
+Este correo ha sido enviado desde la web.
+
+NOMBRE: <b>[NAME_USER]</b>
+CORREO: <b>[CORREO_USER]</b>
+ASUNTO: <b>[ASUNTO_USER]</b>
+MENSAJE: 
+[MSG_USER]

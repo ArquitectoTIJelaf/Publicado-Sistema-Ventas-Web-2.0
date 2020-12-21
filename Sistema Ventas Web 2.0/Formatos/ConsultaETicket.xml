@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<consulta_eticket>
+	<parametros>
+		<parametro id="CODTIENDA">[CODTIENDA]</parametro>
+		<parametro id="ETICKET">[ETICKET]</parametro>
+	</parametros>
+</consulta_eticket>

@@ -1,0 +1,10 @@
+Estimado: <b>[NAME_USER]</b>
+Ocurrieron problemas al comprar
+Las posibles causas pueden ser:
+- Datos incorrectos de la tarjeta (Credito o Debito)
+- El tipo de tarjeta no es VISA
+- Fondos insuficientes
+- Problemas bancarios
+
+ para cualquier duda,  consulta o reclamo 
+ use sus datos personales registrados en nuestro sistema

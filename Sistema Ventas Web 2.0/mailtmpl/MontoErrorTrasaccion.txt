@@ -1,0 +1,9 @@
+Estimado Resposable de Sistemas:
+
+Ocurrio un error en la trasaccion del Nro Order [NUMORDER]. 
+El monto de Modulo de Pasajes (S/ [MONTOREAL]) no concuerda con el monto procesado en Visa(S/ [MONTOVISA]),
+por lo cual el proceso de venta de pasaje no se concreto y 
+por ende se informa que este monto procesado del usuario [NAME_USER] ([USER])
+se debe en extornar la brevedad del caso
+
+Sorporte Sistemas Web Pasajes

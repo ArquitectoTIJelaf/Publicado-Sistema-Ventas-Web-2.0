@@ -1,0 +1,15 @@
+<h1><strong> Bienvenido Estimado Cliente </strong> </h1> </br></br>
+Se ha  registrado un usuario usando este correo en nuestro sistema de ventas de  pasajes por Internet.
+Use su  usuario y clave para acceder a este sistema.
+Usuario:<b>  [USERNAME]</b>
+Clave: <b> [PASSWORD]</b>
+
+<strong>Recomendaciones:</strong>
+<ul>
+	<li> Use su tarjeta de cr&eacute;dito o debito de tipo VISA durante la  compra.</li>  
+	<li> Tenga en cuenta que su tarjeta debe estar afiliada <strong>Verified by Visa</strong></li> 
+</ul>
+
+<div style="background:#fff;">
+<img alt="BusssTar S.A.C."  style="max-width:100%;display:block;" src="http://sales.transportesjuliocesar.pe/images/logo2.png"  />
+</div>
