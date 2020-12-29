@@ -472,8 +472,16 @@ Partial Class confirmarpago
         If SessionManager.ListarMediosPagosTCredito Is Nothing Then
             SessionManager.ListarMediosPagosTCredito = oPLGlobals.ListarMediosPagos()
         End If
+
+        If AppSettings.valueString("PasarelaMultiTarjeta") = "1" Then
+            dlpagostcredito.DataSource = SessionManager.ListarMediosPagosTCredito
+            dlpagostcredito.DataBind()
+        End If
+
+
         If SessionManager.ListarMediosPagosTCredito.Count > 0 Then
             hivflagventa.Value = SessionManager.ListarMediosPagosTCredito.Item(0).Flag_Venta
+            hivflagpasarela.Value = SessionManager.ListarMediosPagosTCredito.Item(0).Flag_Pasarela
             hivcomision.Value = SessionManager.ListarMediosPagosTCredito.Item(0).Comision
             hivproveedor.Value = SessionManager.ListarMediosPagosTCredito.Item(0).WebTarjetaPagoTipo_Id
             hivformapago.Value = SessionManager.ListarMediosPagosTCredito.Item(0).Id_FormaPagoWeb
@@ -716,6 +724,8 @@ Partial Class confirmarpago
 
     Protected Sub Page_Init(sender As Object, e As EventArgs) Handles Me.Init
         Me.Title = Functions.NombreTituloPagina(Me.Title)
+        Dim formulario As HtmlForm = CType(Me.FindControl("form1"), HtmlForm)
+        formulario.Action = AppSettings.valueString("UrlPageRespuesta")
     End Sub
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try

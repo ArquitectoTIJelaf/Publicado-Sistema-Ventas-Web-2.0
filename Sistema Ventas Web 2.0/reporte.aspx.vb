@@ -30,12 +30,22 @@ Partial Class reporte
         oListaVenta = oPLGlobals.TicketVentaWeb( SessionManager.Id_WebOrders)
         If oListaVenta.Count > 0 Then
             If File.Exists(Server.MapPath(fileReporte)) = True Then
+
+                Dim paramRutaLogo As New ReportParameter("PathImg", "file:///" & Variables.sPathDir & AppSettings.valueString("RutaLocalLogo"))
+                Dim paramColorTitulo As New ReportParameter("ColorTitulo", AppSettings.valueString("ColorTituloReporte"))
+                Dim paramColorSubTitulo As New ReportParameter("ColorSubTitulo", AppSettings.valueString("ColorSubTituloReporte"))
+                Dim paramColorFondoSubTitulo As New ReportParameter("ColorFondoSubTitulo", AppSettings.valueString("ColorFondoSubTituloReporte"))
+                Dim parametros As ReportParameter() = {paramRutaLogo, paramColorTitulo, paramColorSubTitulo, paramColorFondoSubTitulo}
+
                 ReportViewer1.ProcessingMode = ProcessingMode.Local
                 ReportViewer1.LocalReport.EnableExternalImages = True
                 ReportViewer1.LocalReport.ReportPath = Server.MapPath(fileReporte)
                 Dim datasource As New ReportDataSource("DataSet1", oListaVenta)
                 ReportViewer1.LocalReport.DataSources.Clear()
                 ReportViewer1.LocalReport.DataSources.Add(datasource)
+                ReportViewer1.LocalReport.SetParameters(parametros)
+                ReportViewer1.LocalReport.Refresh()
+
             Else
                 ScriptUser.JQueryMensaje(Me, "No se encontro el reporte.")
             End If

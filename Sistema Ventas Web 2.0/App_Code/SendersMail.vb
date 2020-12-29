@@ -411,12 +411,18 @@ Public Module SendersMail
             'strBody = Replace(strBody, "[NAME_USER]", SessionManager.Correo_Users)
             'strBody = Replace(strBody, "[DATEPAY]", SessionManager.FechaTransaccionVisa)
             strBody = Replace(strBody, "[NRO_ORDEN]", strNumOrder)
+            strBody = Replace(strBody, "[RutaLogo]", AppSettings.valueString("UrlHttpLogoEmpresa"))
+            strBody = Replace(strBody, "[NombreEmpresa]", AppSettings.valueString("NombreEmpresa"))
+            strBody = Replace(strBody, "[ColorFondoLogoEmail]", AppSettings.valueString("ColorFondoLogoEmail"))
+            strBody = Replace(strBody, "[ColorTituloEmail]", AppSettings.valueString("ColorTituloEmail"))
+            strBody = Replace(strBody, "[ColorFondoTituloEmail]", AppSettings.valueString("ColorFondoTituloEmail"))
+            strBody = Replace(strBody, "[ColorTextoEmail]", AppSettings.valueString("ColorTextoEmail"))
             Dim HTML_HD_IDA As New StringBuilder
             Dim HTML_HD_RETORNO As New StringBuilder
             If Not SessionManager.Cliente.ListaAsientosIda Is Nothing AndAlso SessionManager.Cliente.ListaAsientosIda.Count > 0 Then
                 ListaPasajeros = SessionManager.Cliente.ListaAsientosIda
                 HTML_HD_IDA.Append("<tr style='border-spacing: 0;'>")
-                HTML_HD_IDA.AppendLine("<td style='border-spacing: 0; border-left:1px solid #dab369;border-right:1px solid #dab369; background:#76d376;padding:10px 0px;color:#fff'> ")
+                HTML_HD_IDA.AppendLine("<td style='border-spacing: 0; border-left:1px solid #dab369;border-right:1px solid #dab369; background:[ColorFondoSubTituloEmail];padding:10px 0px;color:[ColorSubTituloEmail]'> ")
                 HTML_HD_IDA.AppendLine("<table><tbody><tr>")
                 HTML_HD_IDA.AppendLine("<th style='padding-left:20px; padding-right:100px;'>" & SessionManager.Origen_Ida & " - " & SessionManager.Destino_Ida & " (ida)</th>")
                 HTML_HD_IDA.AppendLine("<th> " & CDate(SessionManager.FechaDeViajeIda).ToString("dd MMMM, yyyy") & " " & SessionManager.HoraViajeIda & "</th>")
@@ -452,7 +458,7 @@ Public Module SendersMail
             If Not SessionManager.Cliente.ListaAsientosRetorno Is Nothing AndAlso SessionManager.Cliente.ListaAsientosRetorno.Count > 0 Then
                 ListaPasajeros.AddRange(SessionManager.Cliente.ListaAsientosRetorno)
                 HTML_HD_RETORNO.Append("<tr style='border-spacing: 0;'>")
-                HTML_HD_RETORNO.AppendLine("<td style='border-spacing: 0; border-left:1px solid #dab369;border-right:1px solid #dab369; background:#76d376;padding:10px 0px;color:#fff;'> ")
+                HTML_HD_RETORNO.AppendLine("<td style='border-spacing: 0; border-left:1px solid #dab369;border-right:1px solid #dab369; background:[ColorFondoSubTituloEmail];padding:10px 0px;color:[ColorSubTituloEmail];'> ")
                 HTML_HD_RETORNO.AppendLine("<table><tbody><tr>")
                 HTML_HD_RETORNO.AppendLine("<th style='padding-left:20px; padding-right:100px;'>" & SessionManager.Origen_Retorno & " - " & SessionManager.Destino_Retorno & " (retorno)</th>")
                 HTML_HD_RETORNO.AppendLine("<th> " & CDate(SessionManager.FechaDeViajeRetorno).ToString("dd MMMM, yyyy") & " " & SessionManager.HoraViajeRetorno & "</th>")
@@ -488,6 +494,8 @@ Public Module SendersMail
 
             strBody = Replace(strBody, "[HD_IDA]", HTML_HD_IDA.ToString)
             strBody = Replace(strBody, "[HD_RETORNO]", HTML_HD_RETORNO.ToString)
+            strBody = Replace(strBody, "[ColorSubTituloEmail]", AppSettings.valueString("ColorSubTituloEmail"))
+            strBody = Replace(strBody, "[ColorFondoSubTituloEmail]", AppSettings.valueString("ColorFondoSubTituloEmail"))
             strBody = strBody.Replace("<br>", "")
             If FactElectronica <> "TRUE" Then
                 ListaPasajeros = Nothing
